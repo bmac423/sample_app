@@ -50,7 +50,7 @@ describe "Static pages" do
     end
 
     it "should have the right title 'Contact'" do
-      visit '/static_pages/concact'
+      visit '/static_pages/contact'
       expect(page).to have_title("#{base_title} | Contact")
     end
   end
