@@ -22,7 +22,7 @@ describe "Static pages" do
     click_link "Sign up now!"
     expect(page).to have_title(full_title('Sign up'))
     click_link "sample app"
-    expect(page).to have_title(full_title())
+    expect(page).to have_title(full_title(""))
   end
   
   describe "Home page" do
@@ -44,16 +44,16 @@ describe "Static pages" do
   end
   
   describe "About page" do
-    before { visit help_path }
+    before { visit about_path }
 
-    let(:heading)    { 'About' }
+    let(:heading)    { 'About Us' }
     let(:page_title) { 'About Us' }
 
     it_should_behave_like "all static pages"
   end
   
   describe "Contact page" do
-    before { visit help_path }
+    before { visit contact_path }
 
     let(:heading)    { 'Contact' }
     let(:page_title) { 'Contact' }
