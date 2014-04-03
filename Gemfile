@@ -5,7 +5,7 @@ ruby '2.0.0'
 gem 'rails', '4.0.3'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'pg', '0.17.1'
-#gem 'sass', '3.2.0'
+gem 'bcrypt-ruby', '3.1.2'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
@@ -17,7 +17,6 @@ group :test do
 end
 
 gem 'sass-rails', '4.0.2'
-#gem 'sprockets', '2.11'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails', '3.0.4'
